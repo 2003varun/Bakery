@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Bakery</title>
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+<link rel="icon" href="logo.jpg" type="image/jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar">
+    <a href="#" class="logo">FOUR</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <a href="menu.html" class="nav-cta">Order Now</a>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-deco"></div>
+    <div class="hero-ring"></div>
+
+    <div class="hero-img-wrap">
+      <!-- Replace with: <img src="hero.png" alt="Fresh baked bread"> -->
+      <div class="hero-img-placeholder">🥐</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag"> — Popular Bakery</div>
+      <h1 class="hero-title">
+        Baked with<br><em>love & time</em>
+      </h1>
+      <p class="hero-sub">
+        Every loaf tells a story.  — made fresh before the city wakes.
+      </p>
+      <div class="hero-actions">
+        
+         <a href="menu.html" class="btn-primary">Explore menu</a>
+        
+        <button class="btn-ghost">Our Story →</button>
+      </div>
+    </div>
+  </section>
+  <!-- ── OFFERINGS ── -->
+  <section class="offerings">
+    <div class="offerings-header">
+      <div>
+        <p class="section-label">What we make</p>
+        <h2>Our <em>finest</em><br>creations</h2>
+      </div>
+      <a href="#" class="see-all">View full menu →</a>
+    </div>
+
+    <!-- Category filter tabs -->
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-filter="all">All</button>
+      <button class="menu-tab" data-filter="breads">Breads</button>
+      <button class="menu-tab" data-filter="pastries">Pastries</button>
+      <button class="menu-tab" data-filter="cakes">Cakes</button>
+      <button class="menu-tab" data-filter="frozen">Frozen</button>
+      <button class="menu-tab" data-filter="waffles">Waffles</button>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- 01 Artisan Sourdough -->
+      <div class="item-card" data-category="breads">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#4a2c1a,#8b5e3c)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#6b3d2e,#c9a96e);display:flex;align-items:center;justify-content:center;font-size:90px;">🍞</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Breads</div>
+        <div class="item-card-content">
+          <div class="item-num">01</div>
+          <div class="item-name">Artisan Sourdough</div>
+          <div class="item-desc">Slow-fermented 48 hours with our 20-year-old starter. Dark crust, open crumb.</div>
+          <div class="item-price">₹180</div>
+        </div>
+      </div>
+
+      <!-- 02 Butter Croissant -->
+      <div class="item-card" data-category="pastries">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#2d1a0e,#5a3828)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#5a3020,#d4a574);display:flex;align-items:center;justify-content:center;font-size:90px;">🥐</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Pastries</div>
+        <div class="item-card-content">
+          <div class="item-num">02</div>
+          <div class="item-name">Butter Croissant</div>
+          <div class="item-desc">Classic French laminated pastry, 72 layers of pure butter dough.</div>
+          <div class="item-price">₹120</div>
+        </div>
+      </div>
+
+      <!-- 03 Custom Cake -->
+      <div class="item-card" data-category="cakes">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#3d2316,#7a4f38)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#3d2316,#b8935a);display:flex;align-items:center;justify-content:center;font-size:90px;">🎂</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Cakes</div>
+        <div class="item-card-content">
+          <div class="item-num">03</div>
+          <div class="item-name">Custom Cake</div>
+          <div class="item-desc">Designed and baked for your occasion. Celebration, wedding, or just because.</div>
+          <div class="item-price">From ₹850</div>
+        </div>
+      </div>
+
+      <!-- 04 Belgian Waffle -->
+      <div class="item-card" data-category="waffles">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#3b2510,#7d5230)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#7d5230,#e8c97a);display:flex;align-items:center;justify-content:center;font-size:90px;">🧇</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Waffles</div>
+        <div class="item-card-content">
+          <div class="item-num">04</div>
+          <div class="item-name">Belgian Waffle</div>
+          <div class="item-desc">Crisp outside, fluffy inside. Topped with fresh berries and whipped cream.</div>
+          <div class="item-price">₹220</div>
+        </div>
+      </div>
+
+      <!-- 05 Ice Cream Sundae -->
+      <div class="item-card" data-category="frozen">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#1a2a3a,#3a6080)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#3a6080,#a8d8ea);display:flex;align-items:center;justify-content:center;font-size:90px;">🍨</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Frozen</div>
+        <div class="item-card-content">
+          <div class="item-num">05</div>
+          <div class="item-name">Ice Cream Sundae</div>
+          <div class="item-desc">House-churned ice cream, warm brownie, salted caramel drizzle.</div>
+          <div class="item-price">₹190</div>
+        </div>
+      </div>
+
+      <!-- 06 Cinnamon Roll -->
+      <div class="item-card" data-category="pastries">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#4a2c00,#9a6020)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#9a6020,#f0c060);display:flex;align-items:center;justify-content:center;font-size:90px;">🍥</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Pastries</div>
+        <div class="item-card-content">
+          <div class="item-num">06</div>
+          <div class="item-name">Cinnamon Roll</div>
+          <div class="item-desc">Swirled with brown sugar and Ceylon cinnamon, glazed with cream cheese frosting.</div>
+          <div class="item-price">₹150</div>
+        </div>
+      </div>
+
+      <!-- 07 Banana Bread -->
+      <div class="item-card" data-category="breads">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#3a2800,#806020)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#806020,#f5d060);display:flex;align-items:center;justify-content:center;font-size:90px;">🍌</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Breads</div>
+        <div class="item-card-content">
+          <div class="item-num">07</div>
+          <div class="item-name">Banana Bread</div>
+          <div class="item-desc">Moist, rich loaf made with overripe bananas, walnuts, and a hint of vanilla.</div>
+          <div class="item-price">₹160</div>
+        </div>
+      </div>
+
+      <!-- 08 Waffle Ice Cream Sandwich -->
+      <div class="item-card" data-category="waffles">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#1a1a3a,#3a3a7a)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#3a3a7a,#a0a0e0);display:flex;align-items:center;justify-content:center;font-size:90px;">🍦</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Waffles</div>
+        <div class="item-card-content">
+          <div class="item-num">08</div>
+          <div class="item-name">Waffle Sandwich</div>
+          <div class="item-desc">Two mini waffles hugging a scoop of vanilla bean ice cream. A bakery classic.</div>
+          <div class="item-price">₹250</div>
+        </div>
+      </div>
+
+      <!-- 09 Chocolate Lava Cake -->
+      <div class="item-card" data-category="cakes">
+        <div class="item-card-bg" style="background:linear-gradient(160deg,#1a0a0a,#4a1a1a)"></div>
+        <div class="item-card-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#4a1a1a,#c04040);display:flex;align-items:center;justify-content:center;font-size:90px;">🍫</div>
+        </div>
+        <div class="item-card-overlay"></div>
+        <div class="item-card-badge">Cakes</div>
+        <div class="item-card-content">
+          <div class="item-num">09</div>
+          <div class="item-name">Lava Cake</div>
+          <div class="item-desc">Warm dark chocolate shell with a molten centre. Served with vanilla ice cream.</div>
+          <div class="item-price">₹280</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── VISIT ── -->
+  <section>
+    <div class="visit-section">
+      <div>
+        <p class="visit-label">Find Us</p>
+        <h2 class="visit-title">
+          Come for the<br><em>warmth,</em><br>stay for the bread
+        </h2>
+        <p class="visit-text">
+          Our doors open before sunrise. Pull up a stool at the counter and watch the morning unfold over a fresh cup and something warm from the oven.
+        </p>
+        <div class="hours-grid">
+          <div class="hours-item">
+            <div class="hours-day">Mon – Fri</div>
+            <div class="hours-time">6:30 – 19:00</div>
+          </div>
+          <div class="hours-item">
+            <div class="hours-day">Saturday</div>
+            <div class="hours-time">6:00 – 18:00</div>
+          </div>
+          <div class="hours-item">
+            <div class="hours-day">Sunday</div>
+            <div class="hours-time">7:00 – 15:00</div>
+          </div>
+          <div class="hours-item">
+            <div class="hours-day">Public Holidays</div>
+            <div class="hours-time">8:00 – 14:00</div>
+          </div>
+        </div>
+        <!-- <button class="btn-primary">Get Directions</button> -->
+        <a href="https://maps.google.com/?q=12+Mill+Lane+The+Old+Quarter" 
+   target="_blank" 
+   class="btn-primary">
+   Get Directions
+</a>
+      </div>
+      <div class="visit-map">
+        <div class="map-placeholder">
+          <div class="map-pin"></div>
+          <div class="map-label">Popular Bakery</div>
+          <div class="map-addr">BB Rd, Shahapur, Karnataka 585223<br>Open 7:30 AM daily</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">FOUR</div>
+        <p class="footer-desc">Popular bakery rooted in craft, community, and the belief that great bread changes your day.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Breads</a></li>
+          <li><a href="#">Pastries</a></li>
+          <li><a href="#">Cakes</a></li>
+          <li><a href="#">Seasonal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Bakery</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Instagram</a></li>
+         <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 FOUR Artisan Bakery. All rights reserved.</span>
+      <span>Made with flour & love.</span>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

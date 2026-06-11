@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOUR — Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAVBAR ── -->
+  <header class="navbar scrolled" id="navbar">
+    <a href="home.html" class="logo">FOUR</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html" class="nav-active">Menu</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="nav-cta">Order Now</a>
+  </header>
+
+  <!-- ── MENU HERO ── -->
+  <section class="menu-hero">
+    <div class="menu-hero-content">
+      <p class="menu-hero-label">Est. 1998 — Artisan Bakery</p>
+      <h1 class="menu-hero-title">Our <em>Menu</em></h1>
+      <p class="menu-hero-sub">Everything baked fresh daily — from the first loaf at dawn to the last slice at dusk.</p>
+    </div>
+  </section>
+
+  <!-- ── MENU BODY ── -->
+  <main class="menu-main">
+
+    <!-- Filter Tabs -->
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-filter="all">All Items</button>
+      <button class="menu-tab" data-filter="breads">Breads</button>
+      <button class="menu-tab" data-filter="pastries">Pastries</button>
+      <button class="menu-tab" data-filter="cakes">Cakes</button>
+      <button class="menu-tab" data-filter="waffles">Waffles</button>
+      <button class="menu-tab" data-filter="frozen">Frozen</button>
+    </div>
+
+    <!-- ── BREADS ── -->
+    <div class="menu-section" data-section="breads">
+      <div class="menu-section-label">
+        <span class="section-line"></span>
+        <h2>Breads</h2>
+        <span class="section-line"></span>
+      </div>
+      <div class="menu-grid">
+
+        <div class="menu-item" data-category="breads">
+          <div class="menu-item-emoji">🍞</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Artisan Sourdough</h3>
+              <span class="menu-item-price">₹180</span>
+            </div>
+            <p class="menu-item-desc">Slow-fermented 48 hours with our 20-year-old starter. Dark crust, open crumb.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Bestseller</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <div class="menu-item-emoji">🍌</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Banana Bread</h3>
+              <span class="menu-item-price">₹160</span>
+            </div>
+            <p class="menu-item-desc">Moist loaf made with overripe bananas, walnuts, and a hint of vanilla.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <div class="menu-item-emoji">🫓</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Multigrain Loaf</h3>
+              <span class="menu-item-price">₹200</span>
+            </div>
+            <p class="menu-item-desc">Seven heritage grains, sunflower seeds, and a touch of honey. Dense and hearty.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Healthy</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <div class="menu-item-emoji">🥖</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">French Baguette</h3>
+              <span class="menu-item-price">₹140</span>
+            </div>
+            <p class="menu-item-desc">Classic crisp crust with a chewy interior. Baked fresh every morning at 5 AM.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── PASTRIES ── -->
+    <div class="menu-section" data-section="pastries">
+      <div class="menu-section-label">
+        <span class="section-line"></span>
+        <h2>Pastries</h2>
+        <span class="section-line"></span>
+      </div>
+      <div class="menu-grid">
+
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-item-emoji">🥐</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Butter Croissant</h3>
+              <span class="menu-item-price">₹120</span>
+            </div>
+            <p class="menu-item-desc">Classic French laminated pastry, 72 layers of pure butter dough.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Bestseller</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-item-emoji">🍥</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Cinnamon Roll</h3>
+              <span class="menu-item-price">₹150</span>
+            </div>
+            <p class="menu-item-desc">Swirled with brown sugar and Ceylon cinnamon, glazed with cream cheese frosting.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-item-emoji">🥧</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Seasonal Fruit Tart</h3>
+              <span class="menu-item-price">₹210</span>
+            </div>
+            <p class="menu-item-desc">Buttery shortcrust shell with vanilla custard and glazed seasonal fruits.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Seasonal</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-item-emoji">🍩</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Glazed Doughnut</h3>
+              <span class="menu-item-price">₹90</span>
+            </div>
+            <p class="menu-item-desc">Pillowy fried dough, finished with a light sugar glaze or chocolate drizzle.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-item-emoji">🥮</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Almond Danish</h3>
+              <span class="menu-item-price">₹170</span>
+            </div>
+            <p class="menu-item-desc">Flaky pastry filled with almond cream, topped with toasted flaked almonds.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-item-emoji">🍫</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Pain au Chocolat</h3>
+              <span class="menu-item-price">₹140</span>
+            </div>
+            <p class="menu-item-desc">Two dark chocolate batons tucked inside buttery laminated dough. A classic done right.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Bestseller</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── CAKES ── -->
+    <div class="menu-section" data-section="cakes">
+      <div class="menu-section-label">
+        <span class="section-line"></span>
+        <h2>Cakes</h2>
+        <span class="section-line"></span>
+      </div>
+      <div class="menu-grid">
+
+        <div class="menu-item" data-category="cakes">
+          <div class="menu-item-emoji">🎂</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Custom Celebration Cake</h3>
+              <span class="menu-item-price">From ₹850</span>
+            </div>
+            <p class="menu-item-desc">Designed and baked for your occasion. Celebration, wedding, or just because. Order 48 hrs ahead.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Pre-order</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cakes">
+          <div class="menu-item-emoji">🍰</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Slice of the Day</h3>
+              <span class="menu-item-price">₹180</span>
+            </div>
+            <p class="menu-item-desc">Ask at the counter — our daily rotating single slice. Could be carrot, red velvet, or lemon drizzle.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Daily Special</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cakes">
+          <div class="menu-item-emoji">🍫</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Chocolate Lava Cake</h3>
+              <span class="menu-item-price">₹280</span>
+            </div>
+            <p class="menu-item-desc">Warm dark chocolate shell with a molten centre. Served with vanilla ice cream.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Bestseller</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cakes">
+          <div class="menu-item-emoji">🧁</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Cupcake Trio</h3>
+              <span class="menu-item-price">₹220</span>
+            </div>
+            <p class="menu-item-desc">Three mini cupcakes — vanilla bean, chocolate fudge, and strawberry. Perfect for sharing.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── WAFFLES ── -->
+    <div class="menu-section" data-section="waffles">
+      <div class="menu-section-label">
+        <span class="section-line"></span>
+        <h2>Waffles</h2>
+        <span class="section-line"></span>
+      </div>
+      <div class="menu-grid">
+
+        <div class="menu-item" data-category="waffles">
+          <div class="menu-item-emoji">🧇</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Classic Belgian Waffle</h3>
+              <span class="menu-item-price">₹220</span>
+            </div>
+            <p class="menu-item-desc">Crisp outside, fluffy inside. Topped with fresh berries and whipped cream.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Bestseller</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="waffles">
+          <div class="menu-item-emoji">🍦</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Waffle Ice Cream Sandwich</h3>
+              <span class="menu-item-price">₹250</span>
+            </div>
+            <p class="menu-item-desc">Two mini waffles hugging a scoop of vanilla bean ice cream. A bakery classic.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="waffles">
+          <div class="menu-item-emoji">🍯</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Honey Butter Waffle</h3>
+              <span class="menu-item-price">₹200</span>
+            </div>
+            <p class="menu-item-desc">Warm waffle drizzled with raw wildflower honey and a generous knob of cultured butter.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="waffles">
+          <div class="menu-item-emoji">🍓</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Strawberry Dream Waffle</h3>
+              <span class="menu-item-price">₹240</span>
+            </div>
+            <p class="menu-item-desc">Loaded with fresh strawberries, Chantilly cream, and a dusting of icing sugar.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Seasonal</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── FROZEN ── -->
+    <div class="menu-section" data-section="frozen">
+      <div class="menu-section-label">
+        <span class="section-line"></span>
+        <h2>Ice Cream &amp; Frozen</h2>
+        <span class="section-line"></span>
+      </div>
+      <div class="menu-grid">
+
+        <div class="menu-item" data-category="frozen">
+          <div class="menu-item-emoji">🍨</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Ice Cream Sundae</h3>
+              <span class="menu-item-price">₹190</span>
+            </div>
+            <p class="menu-item-desc">House-churned ice cream, warm brownie, salted caramel drizzle.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Bestseller</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="frozen">
+          <div class="menu-item-emoji">🍦</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Soft Serve Cone</h3>
+              <span class="menu-item-price">₹110</span>
+            </div>
+            <p class="menu-item-desc">Creamy vanilla or chocolate soft serve in a freshly baked waffle cone.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="frozen">
+          <div class="menu-item-emoji">🍧</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Mango Sorbet</h3>
+              <span class="menu-item-price">₹130</span>
+            </div>
+            <p class="menu-item-desc">Dairy-free Alphonso mango sorbet. Refreshing, tangy, and made with no artificial flavours.</p>
+            <div class="menu-item-tags"><span>Vegan</span><span>Seasonal</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="frozen">
+          <div class="menu-item-emoji">🍡</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Ice Cream Sandwich</h3>
+              <span class="menu-item-price">₹160</span>
+            </div>
+            <p class="menu-item-desc">Two house-baked chocolate cookies around a thick slab of cookies & cream ice cream.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="frozen">
+          <div class="menu-item-emoji">🫐</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Blueberry Gelato</h3>
+              <span class="menu-item-price">₹150</span>
+            </div>
+            <p class="menu-item-desc">Slow-churned Italian-style gelato with fresh blueberries. Dense, silky, and deeply fruity.</p>
+            <div class="menu-item-tags"><span>Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="frozen">
+          <div class="menu-item-emoji">🍮</div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Frozen Crème Brûlée</h3>
+              <span class="menu-item-price">₹220</span>
+            </div>
+            <p class="menu-item-desc">Our signature crème brûlée, frozen and torched to order. Cold inside, caramel crust on top.</p>
+            <div class="menu-item-tags"><span>Veg</span><span>Signature</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">FOUR</div>
+        <p class="footer-desc">An artisan bakery rooted in craft, community, and the belief that great bread changes your day.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Breads</a></li>
+          <li><a href="#">Pastries</a></li>
+          <li><a href="#">Cakes</a></li>
+          <li><a href="#">Seasonal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Bakery</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Wholesale</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 FOUR Artisan Bakery. All rights reserved.</span>
+      <span>Made with flour & love.</span>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
